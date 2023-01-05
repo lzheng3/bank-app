@@ -11,7 +11,7 @@ export default function Transaction(props) {
         headerName: "Transaction Type",
         width: 300,
         renderCell: (params) =>
-          params.row.transaction_type == 1 ? "Deposit" : "Withdrawal",
+          params.row.transaction_type === 1 ? "Deposit" : "Withdrawal",
       },
       {
         field: "timestamp",
